@@ -19,6 +19,7 @@
             <a href="index.html" class="header-nav-link">Main</a>
             <a href="client.html" class="header-nav-link">Client</a>
             <a href="staff.html" class="header-nav-link">Staff</a>
+            <a href="classes.html" class="footer-nav-link">Classes</a>
             <a href="statistics.html" class="header-nav-link">Statistics</a>
         </div>
         <nav class="navbar">
@@ -45,11 +46,12 @@
             <i class="bx bx-search"></i>
             <input type="text" placeholder="Search By">
             <select class="drop-down">
-                <option value="option1">User Name</option>
+                <option value="option1">Name</option>
                 <option value="option2">Email</option>
-                <option value="option3">Phone</option>
-                <option value="option4">Reg Time</option>
+                <option value="option3">Address</option>
+                <option value="option4">Phone</option>
                 <option value="option5">Date of Birth</option>
+                <option value="option6">Registered</option>
             </select>
         </div>
         <table class="data-table">
@@ -59,46 +61,50 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
-                <th>Action</th>
+                <th>Address</th>
+                <th>Date of Birth</th>
+                <th>Registered</th>
             </tr>
         </thead>
         <tbody>
             <tr data-row="1">
                 <td><input type="checkbox" class="select-row" onclick="toggleRowColor(this)">
                 </td>
-                <td>Data 1A</td>
-                <td>Data 1B</td>
-                <td>Data 1C</td>
-                <td>
-                    <button class="edit-button"><i class='bx bx-edit-alt' ></i>Edit</button>
-                    <button class="delete-button"><i class='bx bx-eraser'></i>Delete</button>
-                </td>
+                <td><input placeholder="Data 1A" readonly></td>
+                <td><input placeholder="Data 1B" readonly></td>
+                <td><input placeholder="Data 1C" readonly></td>
+                <td><input placeholder="Data 1D" readonly></td>
+                <td><input placeholder="Data 1E" readonly></td>
+                <td><input placeholder="Data 1F" readonly></td>
             </tr>
             <tr data-row="2">
                 <td><input type="checkbox" class="select-row" onclick="toggleRowColor(this)">
                 </td>
-                <td>Data 2A</td>
-                <td>Data 2B</td>
-                <td>Data 2C</td>
-                <td>
-                    <button class="edit-button"><i class='bx bx-edit-alt' ></i>Edit</button>
-                    <button class="delete-button"><i class='bx bx-eraser'></i>Delete</button>
-                </td>
+                <td><input placeholder="Data 2A" readonly></td>
+                <td><input placeholder="Data 2B" readonly></td>
+                <td><input placeholder="Data 2C" readonly></td>
+                <td><input placeholder="Data 2D" readonly></td>
+                <td><input placeholder="Data 2E" readonly></td>
+                <td><input placeholder="Data 2F" readonly></td>
             </tr>
             <tr data-row="3">
                 <td><input type="checkbox" class="select-row" onclick="toggleRowColor(this)">
                 </td>
-                <td>Data 3A</td>
-                <td>Data 3B</td>
-                <td>Data 3C</td>
-                <td>
-                    <button class="edit-button"><i class='bx bx-edit-alt' ></i>Edit</button>
-                    <button class="delete-button"><i class='bx bx-eraser'></i>Delete</button>
-                </td>
+                <td><input placeholder="Data 3A" readonly></td>
+                <td><input placeholder="Data 3B" readonly></td>
+                <td><input placeholder="Data 3C" readonly></td>
+                <td><input placeholder="Data 3D" readonly></td>
+                <td><input placeholder="Data 3E" readonly></td>
+                <td><input placeholder="Data 3F" readonly></td>
             </tr>
         </tbody>
     </table>
     <hr>
+    <td>
+        <button class="edit-button"><i class='bx bx-edit-alt' ></i> Edit</button>
+        <button class="update-button"><i class='bx bx-check' ></i> Update</button>
+        <button class="delete-button"><i class='bx bx-eraser'></i> Delete</button>
+    </td>
     </div>
 <!----- footer ----->
     <hr>
@@ -111,11 +117,14 @@
                 <a href="index.html" class="footer-nav-link">Main</a>
                 <a href="client.html" class="footer-nav-link">Client</a>
                 <a href="staff.html" class="footer-nav-link">Staff</a>
+                <a href="classes.html" class="footer-nav-link">Classes</a>
                 <a href="statistics.html" class="footer-nav-link">Statistics</a>
             </div>
         </div>
         <hr>
-        <p class="copyright">&copy; Copyright 2023 - Company Name Not Found, Inc. All rights reserved.</p>
+        <p class="copyright">
+            &copy; <span id="copyright-year"></span> Company Name Not Found, Inc. All rights reserved.
+        </p>
     </footer>
 <!-- JavaScript -->
     <script src="js/script.js"></script>
