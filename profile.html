@@ -19,6 +19,7 @@
             <a href="index.html" class="header-nav-link">Main</a>
             <a href="client.html" class="header-nav-link">Client</a>
             <a href="staff.html" class="header-nav-link">Staff</a>
+            <a href="classes.html" class="footer-nav-link">Classes</a>
             <a href="statistics.html" class="header-nav-link">Statistics</a>
         </div>
         <nav class="navbar">
@@ -40,11 +41,11 @@
         <div class="column-1">
             <div class="input-field">
                 <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" class="details" required>
+                <input type="text" id="first-name" name="first-name" class="details" required placeholder="John">
             </div>
             <div class="input-field">
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" class="details" required>
+                <input type="text" id="email" name="email" class="details" required placeholder="john.doe@example.com">
             </div>
             <div class="input-field">
                 <label for="country">Country:</label>
@@ -251,12 +252,12 @@
                 <label for="date-of-birth">Date of Birth:</label>
                 <input type="date" id="date-of-birth" name="date-of-birth" class="details" required>
             </div>
-            <input class="contact-submit-button" type="submit" value="Submit">
+            <input class="submit-button" type="submit" value="Submit">
         </div>
         <div class="column-2">
             <div class="input-field">
                 <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" class="details" required>
+                <input type="text" id="last-name" name="last-name" class="details" required placeholder="Doe">
             </div>
             <div class="input-field">
                 <label for="phone-number">Phone Number:</label>
@@ -286,7 +287,7 @@
                     <label for="re-confirm-password">Re-confirm Password:</label>
                     <input type="password" id="re-confirm-password" name="re-confirm-password" class="details" required>
                 </div>
-                <input class="contact-submit-button" type="submit" value="Submit">
+                <input class="submit-button" type="submit" value="Submit">
             </div>
             </form>
         </div>
@@ -302,11 +303,14 @@
                 <a href="index.html" class="footer-nav-link">Main</a>
                 <a href="client.html" class="footer-nav-link">Client</a>
                 <a href="staff.html" class="footer-nav-link">Staff</a>
+                <a href="classes.html" class="footer-nav-link">Classes</a>
                 <a href="statistics.html" class="footer-nav-link">Statistics</a>
             </div>
         </div>
         <hr>
-        <p class="copyright">&copy; Copyright 2023 - Company Name Not Found, Inc. All rights reserved.</p>
+        <p class="copyright">
+            &copy; <span id="copyright-year"></span> Company Name Not Found, Inc. All rights reserved.
+        </p>
     </footer>
 <!-- JavaScript -->
     <script src="js/script.js"></script>
