@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zumba App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!----- header ----->
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" width="125"></a>
+        </div>
+        <div class="header-links">
+            <a href="index.html" class="header-nav-link">Main</a>
+            <a href="client.html" class="header-nav-link">Client</a>
+            <a href="staff.html" class="header-nav-link">Staff</a>
+            <a href="classes.html" class="footer-nav-link">Classes</a>
+            <a href="statistics.html" class="header-nav-link">Statistics</a>
+        </div>
+        <nav class="navbar">
+            <ul id="MenuItems">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href="">Sign Out</a></li>
+            </ul>
+        </nav>
+        <img src="images/user-circle-solid-24.png" class="header-menu-icon" onclick="menutoggle()">
+    </header>
+    <hr>
+<!----- class-1 ----->
+    <div class="centered-box">
+        <h1>Class Dashboard</h1>
+        <a href="" class="import_export">
+            <i class='bx bx-import'></i>Import
+        </a>
+        <span class="link-spacing"></span>
+        <a href="" class="import_export">
+            <i class='bx bx-export'></i>Export
+        </a>
+        <div class="search-container">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search By">
+            <select class="drop-down">
+                <option value="option1">Name</option>
+                <option value="option2">Description</option>
+                <option value="option3">Attendees</option>
+                <option value="option4">Spaces</option>
+                <option value="option5">Capacity</option>
+                <option value="option6">Status</option>
+            </select>
+        </div>
+        <table class="data-table">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="select-all" onclick="toggleSelectAllRows(this)">
+                <th>Name</th>
+                <th>Description</th>
+                <th>Attendees</th>
+                <th>Spaces</th>
+                <th>Capacity</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-row="1">
+                <td><input type="checkbox" class="select-row" onclick="toggleRowColor(this)">
+                </td>
+                <td><input placeholder="Data 1A" readonly></td>
+                <td><input placeholder="Data 1B" readonly></td>
+                <td><input placeholder="Data 1C" readonly></td>
+                <td><input placeholder="Data 1D" readonly></td>
+                <td><input placeholder="Data 1E" readonly></td>
+                <td><input placeholder="Data 1F" readonly></td>
+            </tr>
+            <tr data-row="2">
+                <td><input type="checkbox" class="select-row" onclick="toggleRowColor(this)">
+                </td>
+                <td><input placeholder="Data 2A" readonly></td>
+                <td><input placeholder="Data 2B" readonly></td>
+                <td><input placeholder="Data 2C" readonly></td>
+                <td><input placeholder="Data 2D" readonly></td>
+                <td><input placeholder="Data 2E" readonly></td>
+                <td><input placeholder="Data 2F" readonly></td>
+            </tr>
+            <tr data-row="3">
+                <td><input type="checkbox" class="select-row" onclick="toggleRowColor(this)">
+                </td>
+                <td><input placeholder="Data 3A" readonly></td>
+                <td><input placeholder="Data 3B" readonly></td>
+                <td><input placeholder="Data 3C" readonly></td>
+                <td><input placeholder="Data 3D" readonly></td>
+                <td><input placeholder="Data 3E" readonly></td>
+                <td><input placeholder="Data 3F" readonly></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <td>
+        <button class="edit-button"><i class='bx bx-edit-alt' ></i> Edit</button>
+        <button class="update-button"><i class='bx bx-check' ></i> Update</button>
+        <button class="delete-button"><i class='bx bx-eraser'></i> Delete</button>
+    </td>
+    </div>
+<!----- footer ----->
+    <hr>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo" width="125"></a>
+            </div>
+            <div class="footer-centered-links">
+                <a href="index.html" class="footer-nav-link">Main</a>
+                <a href="client.html" class="footer-nav-link">Client</a>
+                <a href="staff.html" class="footer-nav-link">Staff</a>
+                <a href="classes.html" class="footer-nav-link">Classes</a>
+                <a href="statistics.html" class="footer-nav-link">Statistics</a>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            &copy; <span id="copyright-year"></span> Company Name Not Found, Inc. All rights reserved.
+        </p>
+    </footer>
+<!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
